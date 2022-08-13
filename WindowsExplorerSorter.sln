@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsExplorerSorter", "WindowsExplorerSorter\WindowsExplorerSorter.csproj", "{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WESInstaller", "WESInstaller\WESInstaller.wixproj", "{C1C81465-BB73-4B29-9657-EF04B6071755}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|x86.ActiveCfg = Release|Any CPU
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|x86.Build.0 = Release|Any CPU
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Debug|Any CPU.Build.0 = Debug|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Debug|x86.ActiveCfg = Debug|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Debug|x86.Build.0 = Debug|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Release|Any CPU.ActiveCfg = Release|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Release|Any CPU.Build.0 = Release|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Release|x86.ActiveCfg = Release|x86
+		{C1C81465-BB73-4B29-9657-EF04B6071755}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

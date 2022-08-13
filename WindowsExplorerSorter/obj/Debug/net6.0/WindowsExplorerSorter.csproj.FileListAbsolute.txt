@@ -1,0 +1,15 @@
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Debug\net6.0\WindowsExplorerSorter.exe
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Debug\net6.0\WindowsExplorerSorter.deps.json
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Debug\net6.0\WindowsExplorerSorter.runtimeconfig.json
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Debug\net6.0\WindowsExplorerSorter.dll
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Debug\net6.0\WindowsExplorerSorter.pdb
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.csproj.AssemblyReference.cache
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.AssemblyInfoInputs.cache
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.AssemblyInfo.cs
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.csproj.CoreCompileInputs.cache
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.dll
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\refint\WindowsExplorerSorter.dll
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.pdb
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\WindowsExplorerSorter.genruntimeconfig.cache
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\obj\Debug\net6.0\ref\WindowsExplorerSorter.dll
