@@ -7,13 +7,12 @@ using System.IO;
 
 namespace WindowsExplorerSorter {
     public class Sorter {
-        string path;
         public Sorter(string path) { 
-            this.path = path;
-            CreateFolders(GetFileExtensions());
+            CreateFolders(GetFileExtensions(path), path);
+            MoveFiles(path);
         }
 
-        public List<string> GetFileExtensions() {
+        public List<string> GetFileExtensions(string path) {
             List<string> extensions = new();
             List<string> files = Directory.GetFiles(path).ToList();
 
@@ -27,8 +26,14 @@ namespace WindowsExplorerSorter {
             return extensions;
         }
 
-        public void CreateFolders(List<string> extensions) {
+        public void CreateFolders(List<string> extensions, string path) {
             extensions.ForEach(x => Directory.CreateDirectory($"{path}\\{x[1..]}"));
+        }
+
+        public void MoveFiles(string path) {
+            List<string> files = Directory.GetFiles(path).ToList();
+
+            files.ForEach(x => Directory.Move(x, $"{path}\\{Path.GetExtension(x)[1..]}\\{Path.GetFileName(x)}"));
         }
     }
 }
