@@ -5,20 +5,22 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsExplorerSorter", "WindowsExplorerSorter\WindowsExplorerSorter.csproj", "{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WindowsExplorerSorterInstaller", "WindowsExplorerSorterInstaller\WindowsExplorerSorterInstaller.vdproj", "{C3EDFA3A-DB8A-4E6C-B023-AC2487AF703B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Debug|x86.Build.0 = Debug|Any CPU
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3EDFA3A-DB8A-4E6C-B023-AC2487AF703B}.Debug|Any CPU.ActiveCfg = Debug
-		{C3EDFA3A-DB8A-4E6C-B023-AC2487AF703B}.Release|Any CPU.ActiveCfg = Release
+		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D32D64A-7E1A-4D9B-BD2C-527324444FA2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
