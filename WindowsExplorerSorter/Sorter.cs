@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace WindowsExplorerSorter {
     public class Sorter {
-        public Sorter(string path) { 
-            CreateFolders(GetFileExtensions(path), path);
+        List<string> Files;
+        List<string> Extensions = new();
+
+        public Sorter(string path) {
+            Files = Directory.GetFiles(path).ToList();
+            Extensions = GetFileExtensions(path);
+            CreateFolders(Extensions, path);
             MoveFiles(path);
         }
 
         public List<string> GetFileExtensions(string path) {
             List<string> extensions = new();
-            List<string> files = Directory.GetFiles(path).ToList();
 
-            foreach (string file in files) {
+            foreach (string file in Files) {
                 var s = Path.GetExtension(file);
                 if (!extensions.Contains(s)) {
                     extensions.Add(s);
@@ -31,9 +34,7 @@ namespace WindowsExplorerSorter {
         }
 
         public void MoveFiles(string path) {
-            List<string> files = Directory.GetFiles(path).ToList();
-
-            files.ForEach(x => Directory.Move(x, $"{path}\\{Path.GetExtension(x)[1..]}\\{Path.GetFileName(x)}"));
+            Files.ForEach(x => Directory.Move(x, $"{path}\\{Path.GetExtension(x)[1..]}\\{Path.GetFileName(x)}"));
         }
     }
 }
