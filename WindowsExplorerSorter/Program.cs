@@ -3,7 +3,7 @@
 namespace WindowsExplorerSorter {
     class Program {
         static void Main(string[] args) {
-            string path = "C:\\Users\\janbu\\Desktop\\SorterTest";
+            string path = args[0];
 
             Sorter sorter = new(path);
         }
