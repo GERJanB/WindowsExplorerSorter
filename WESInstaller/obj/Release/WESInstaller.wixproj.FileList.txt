@@ -1,0 +1,7 @@
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\cab1.cab
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\WESInstaller.msi
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\WESInstaller.wixpdb
+obj\Release\Product.wixobj
+obj\Release\WESInstaller.wixproj.BindContentsFileListnull.txt
+obj\Release\WESInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Release\WESInstaller.wixproj.BindBuiltOutputsFileListnull.txt

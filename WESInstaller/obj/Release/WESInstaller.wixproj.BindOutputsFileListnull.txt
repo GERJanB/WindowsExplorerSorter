@@ -1,0 +1,3 @@
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\cab1.cab
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\WESInstaller.msi
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WESInstaller\bin\Release\WESInstaller.wixpdb

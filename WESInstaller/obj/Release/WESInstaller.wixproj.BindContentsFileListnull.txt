@@ -1,0 +1,5 @@
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0\WindowsExplorerSorter.deps.json
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0\WindowsExplorerSorter.dll
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0\WindowsExplorerSorter.exe
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0\WindowsExplorerSorter.pdb
+C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0\WindowsExplorerSorter.runtimeconfig.json

@@ -1,31 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<?define sourceFolder = "C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0"?>
-	<Product Id="*" Name="WESInstaller" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="c246f6ff-7b4a-482b-b68a-32c7c339b1d1">
-		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+	<Product Id="*" Name="WES" Language="1033" Version="1.0.0.0" Manufacturer="JB" UpgradeCode="c246f6ff-7b4a-482b-b68a-32c7c339b1d1">
+		<Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" />
+
+		<Property Id="APPPRODUCTION" Value="icon.ico"/>
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="APPLICATIONROOTDIRECTORY" Name="WES"/>
+			</Directory>
+		</Directory>
+
+		<DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+			<Component Id="WindowsExplorerSorter.exe" Guid="e6e199ae-b565-4b18-8e5c-8b8f814b90fd">
+				<File Id="WindowsExplorerSorter.exe" Source="$(var.sourceFolder)\WindowsExplorerSorter.exe" KeyPath="yes" Checksum="yes"/>
+			</Component>
+
+			<Component Id="WindowsExplorerSorter.dll" Guid="aefbf5a6-a4cc-45f0-8c13-b416d9e58006">
+				<File Id="WindowsExplorerSorter.dll" Source="$(var.sourceFolder)\WindowsExplorerSorter.dll" KeyPath="yes"/>
+			</Component>
+
+			<Component Id="WindowsExplorerSorter.deps.json" Guid="AC59E4E7-88BC-4C2A-BD8E-47C4FB847F3F">
+				<File Id="WindowsExplorerSorter.deps.json" Source="$(var.sourceFolder)\WindowsExplorerSorter.deps.json" KeyPath="yes"/>
+			</Component>
+
+			<Component Id="WindowsExplorerSorter.pdb" Guid="39876247-4b20-4050-915e-a92996c378d2">
+				<File Id="WindowsExplorerSorter.pdb" Source="$(var.sourceFolder)\WindowsExplorerSorter.pdb" KeyPath="yes"/>
+			</Component>
+			
+			<Component Id="WindowsExplorerSorter.runtimeconfig.json" Guid="b5731ef5-4c28-4107-a7c2-bf4879f1b42d">
+				<File Id="WindowsExplorerSorter.runtimeconfig.json" Source="$(var.sourceFolder)\WindowsExplorerSorter.runtimeconfig.json" KeyPath="yes"/>
+			</Component>
+
+			<Component Id="RegistryEntrie" Guid="0a94e035-512e-4121-8984-6daa5f045a45">
+				<RegistryKey Root="HKCU"
+							 Key="Software\Classes\Directory\Background\shell\WES"
+							 ForceCreateOnInstall="yes"
+							 ForceDeleteOnUninstall="yes">
+					<RegistryValue Type="string" Value="Sort Files"/>
+				</RegistryKey>
+
+				<RegistryKey Root="HKCU"
+							 Key="Software\Classes\Directory\Background\shell\WES\command"
+							 ForceCreateOnInstall="yes"
+							 ForceDeleteOnUninstall="yes">
+					<RegistryValue Type="string" Value="&#34;[APPLICATIONROOTDIRECTORY]WindowsExplorerSorter.exe&#34; &#34;%V&#34;"/>
+				</RegistryKey>
+			</Component>
+		</DirectoryRef>
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 		<MediaTemplate />
 
-		<Feature Id="ProductFeature" Title="WESInstaller" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
+		<Feature Id="ProductFeature" Title="WES" Level="1">
+			<ComponentRef Id="WindowsExplorerSorter.exe"/>
+			<ComponentRef Id="WindowsExplorerSorter.dll"/>
+			<ComponentRef Id="WindowsExplorerSorter.deps.json"/>
+			<ComponentRef Id="WindowsExplorerSorter.pdb"/>
+			<ComponentRef Id="WindowsExplorerSorter.runtimeconfig.json"/>
+			<ComponentRef Id="RegistryEntrie"/>
 		</Feature>
 	</Product>
-
-	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="WESInstaller" />
-			</Directory>
-		</Directory>
-	</Fragment>
-
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
-		</ComponentGroup>
-	</Fragment>
 </Wix>
