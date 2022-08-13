@@ -7,7 +7,11 @@ using System.IO;
 
 namespace WindowsExplorerSorter {
     public class Sorter {
-        private readonly string path = "C:\\Users\\janbu\\Desktop\\SorterTest";
+        string path;
+        public Sorter(string path) { 
+            this.path = path;
+            CreateFolders(GetFileExtensions());
+        }
 
         public List<string> GetFileExtensions() {
             List<string> extensions = new();
@@ -21,6 +25,10 @@ namespace WindowsExplorerSorter {
             }
 
             return extensions;
+        }
+
+        public void CreateFolders(List<string> extensions) {
+            extensions.ForEach(x => Directory.CreateDirectory($"{path}\\{x[1..]}"));
         }
     }
 }
