@@ -3,7 +3,9 @@
 namespace WindowsExplorerSorter {
     class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Hello World!");
+            string path = "C:\\Users\\janbu\\Desktop\\SorterTest";
+
+            Sorter sorter = new(path);
         }
     }
 }
