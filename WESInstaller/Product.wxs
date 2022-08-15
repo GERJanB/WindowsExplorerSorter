@@ -6,6 +6,10 @@
 
 		<Property Id="APPPRODUCTION" Value="icon.ico"/>
 
+		<Condition Message="This Apllication requires .NET 6.0 SDK. Please install the .NET 6.0 SDK, the run this Installer again">
+			<![CDATA[Installed OR WINDOWSSDK60ADIR]]>
+		</Condition>
+
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="APPLICATIONROOTDIRECTORY" Name="WES"/>
