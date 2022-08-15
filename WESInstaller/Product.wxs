@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<?define sourceFolder = "WESFiles"?>
+	<?define sourceFolder = "C:\Users\janbu\source\repos\WindowsExplorerSorter\WindowsExplorerSorter\bin\Release\net6.0"?>
 	<Product Id="*" Name="WES" Language="1033" Version="1.0.0.0" Manufacturer="JB" UpgradeCode="c246f6ff-7b4a-482b-b68a-32c7c339b1d1">
 		<Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" />
 
